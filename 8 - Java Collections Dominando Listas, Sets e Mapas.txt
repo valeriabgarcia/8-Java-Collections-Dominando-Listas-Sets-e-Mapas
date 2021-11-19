@@ -1,0 +1,80 @@
+https://cursos.alura.com.br/formacao-java
+https://cursos.alura.com.br/course/java-collections
+
+https://docs.oracle.com/javase/8/docs/api/
+
+1 - TRABALHANDO COM ARRAYLIST 
+Métodos:
+	.add
+	.remove
+	.get
+	.size
+	.forEach
+Utilizando o for de uma maneira especial, chamada de enhanced for, ou popularmente foreach (foreach + ctrl + espaço)
+Ordenando a lista: Collections.sort();
+A implementação ArrayList.
+O pacote java.util.
+Métodos de manipulação do ArrayList.
+ForEach do Java 8.
+
+2 - LISTAS DE OBJETOS
+A utilidade em reescrever o método toString.
+Collections.sort e o método compareTo.
+Comparator e recursos do Java 8.
+
+3 - RELACIONAMENTOS COM COLEÇÕES
+Em vez de declararmos a referência a uma ArrayList<Aula> (ou LinkedList<Aula>), deixamos mais genérico, utilizando a interface List
+A implementação LinkedList.
+Encapsulamento e princípios de Orientação a Objeto.
+Programação defensiva.
+
+4 - MAIS PRÁTICAS COM RELACIONAMENTOS
+Uma solução para o unmodifiable list.
+Utilizar o método .sort() de Collections para ordenar uma lista
+Stream do Java 8.
+
+5 - O PODER DOS SETS
+Uma nova coleção: Set.
+A implementação HashSet.
+Vantagens e desvantagens do Set.
+	+ não aceita elementos repetidos
+	+ alta velocidade e performance 
+	- não tem ordem 
+	- não tem o médoto get (usar o foreach)
+Mais sobre a interface Collection.
+
+6 - APLICANDO O SET NO MODELO
+Aplicação do Set no nosso modelo.
+Programação defensiva com conjuntos.
+
+7 - EQUALS E HASHCODE
+Implementação das nossas próprias regras de comparação entre objetos de uma mesma classe.
+Sobrescrita do método equals.
+A necessidade de sobrescrever o método hashCode quando o equals for sobrescrito.
+
+8 - OUTROS SETS E ITERATORS
+LinkedHashSet guarda a ordem adicionada dos itens
+As implementações LinkedHashSet e TreeSet.
+Iteração de uma coleção utilizando o Iterator.
+A antiga classe Vector.
+
+9 - QUAL COLLECTION USAR
+Uma coleção é todo mundo que implementa a interface Collection. 
+Collection possui os métodos que utilizamos durante o treinamento, como add, contains, remove e size. 
+Declaração de atributos utilizando a interface Collection.
+	List e Set são filhas de Collection
+Então uma Collection é uma interface que define métodos e trabalha com uma coleção, com um punhado de objetos.
+List é uma sequência e aceita elementos duplicados. Set não aceita duplicados e não define ordem.
+Provavelmente, caso a modelagem do sistema ainda não esteja bem definida, o desenvolvedor irá utilizar a interface Collection<E>. 
+	Dessa maneira, terá acesso aos métodos básicos de todas as implementações, como size(), add(), remove() e contains().
+	Caso sinta necessidade de fazer uma requisição a um elemento específico através da sua posição, trocará de Collection<E> para List<E>. 
+	Caso perceba que ordem não importa, porém é necessária uma busca bem rápida (e sem repetições), um Set<E> é mais apropriado.
+
+10 - MAPAS
+Map não é uma implementação de Collection, ele é uma interface por si só
+Map é muito bom em fazer associações
+	chave e valor
+A interface Map.
+As implementações HashMap e LinkedHashMap (guarda a ordem de implementação das linhas.
+Vantagens e desvantagens do uso do Map.
+O método utilizado para adicionar um elemento em um Map é o método put.
